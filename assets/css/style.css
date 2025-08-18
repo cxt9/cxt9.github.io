@@ -222,16 +222,20 @@ a:hover {
     max-width: 900px;
 }
 
-.hero-title {
-    margin-bottom: var(--spacing-lg);
+.satori-banner {
+    margin-bottom: var(--spacing-xl);
+    animation: fadeInDown 1s ease;
 }
 
-.greeting {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: var(--text-secondary);
-    margin-bottom: var(--spacing-sm);
+.satori-logo {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    filter: brightness(1.1);
+}
+
+.hero-title {
+    margin-bottom: var(--spacing-lg);
 }
 
 .name {
@@ -247,6 +251,17 @@ a:hover {
 @keyframes gradient {
     0%, 100% { filter: hue-rotate(0deg); }
     50% { filter: hue-rotate(30deg); }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero-subtitle {
